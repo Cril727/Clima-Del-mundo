@@ -15,7 +15,6 @@ BuscarCity.addEventListener("click", (event) => {
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${APiKEY}`)
         .then((response) => response.json())
         .then((data) => {
-            console.log(data);
         
 
             // Obtener el icono del clima
